@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="login">
+  <h1 class="login__title">Sign in</h1>
+  <form action="" class="form">
+    {% for field in form %}
+      <p id = "label-tag">
+        {{ field.label_tag }}<br>
+        {{ field }}
+          {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+    <button class="submit">GO</button>
+  </form>
+  <a href="#" class="login__action login__action--normal">Need help?</a>
+  <a href="#" class="login__action">Sign up</a>
+</section>
+{% endblock %}

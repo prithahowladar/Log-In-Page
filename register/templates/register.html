@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div id = "box">
+
+ <p id = "heading1">Sign Up</p>
+  <div><form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+      <p id = "label-tag">
+        {{ field.label_tag }}
+        <p id = "field">
+        {{ field }}
+  </p >
+        {% if field.help_text %}
+          <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+    <button id = "mybtn" type="submit"><span class="shine"></span>
+	<span class="text">Sign Up</span></button>
+  </form>
+  </div>
+    <div id = "heading2">JOIN US ON THE ROAD TO SUCCESS.</div>
+  </div>
+{% endblock %}

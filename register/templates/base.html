@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        #label-tag{
+        font-size:20px;
+        color:white;
+        }
+        #box{
+        padding-left:100px;
+        }
+
+
+        #field{
+        margin-top:-10px;
+        padding-right: 20px;
+        }
+
+
+        #heading1{
+        color:white;
+        font-size:50px;
+        }
+
+
+        #mybtn{
+	width: 150px;
+	height: 50px;
+	background: #333;
+	display: block;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid #333333;
+	color: white;
+	text-decoration: none;
+    margin:0;
+    margin-top:40px;
+    margin-bottom:100px;
+
+	-webkit-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
+	-moz-box-shadow: inset 0px 1px 1px 00px rgba(255,255,255,.4);
+	box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,.4);
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+
+	background-image: -webkit-linear-gradient(bottom, tomato,#c9431a);
+	background-image: -moz-linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+	background-image: -ms-linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+	background-image: -o-linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+	background-image: linear-gradient(bottom, #383838 0%, #444444 49%, #555 50%, #555 100%);
+}
+
+#mybtn span.text {
+	position: absolute;
+    text-align: center;
+	top: 16px;
+	left: 65px;
+    font-size: 25px;
+
+    margin-top:-5px;
+    margin-left: -40px;
+    letter-spacing: 0px;
+    text-shadow: 0px 0px 2px black;
+
+
+
+}
+
+#mybtn span.shine {
+	content: '';
+	position: absolute;
+	height: 400px;
+	width: 20px;
+	background: white;
+	top: -80px;
+	left: -20px;
+	display: block;
+	opacity: 0.8;
+
+	-webkit-box-shadow: 0px 0px 20px 10px white;
+	-moz-box-shadow: 0px 0px 20px 10px white;
+	box-shadow: 0px 0px 20px 10px white;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+#mybtn:hover {
+	-webkit-box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
+	box-shadow: inset 0px 1px 10px 0px rgba(255,255,255,.4), 0px 3px 3px 0px rgba(0,0,0,0.4);
+}
+
+#mybtn:active {
+	-webkit-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
+	-moz-box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
+	box-shadow: inset 0px 1px 15px 0px rgba(0,0,0,.4), inset 0px 1px 1px 1px rgba(0,0,0,.2), 0px 1px 1px 0 rgba(255,255,255,.5);
+}
+
+#mybtn:hover span.shine {
+	left: 170px;
+	top: -300px;
+}
+
+
+#heading2{
+ color:white;
+ text-align:right;
+
+ font-size: 60px;
+ font-weight: 800;
+ letter-spacing:8px;
+ word-spacing: 0px;
+ margin-left:55%;
+ margin-right:2%;
+ margin-top: -45%;
+
+}
+
+       body {
+  background: url(https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Roboto, sans-serif;
+  font-size: 100%; // 16px
+}
+
+    </style>
+</head>
+<body>
+{% block content %}
+{% endblock %}
+</body>
+</html>

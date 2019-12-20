@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFO</title>
+</head>
+<body>
+<p id = "heading1">INFO</p>
+  <div><form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+      <p id = "label-tag">
+        {{ field.label_tag }}
+        <p id = "field">
+        {{ field }}
+  </p >
+        {% if field.help_text %}
+          <small style="color: grey">{{ field.help_text }}</small>
+        {% endif %}
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+    <button id = "mybtn" type="submit"><span class="shine"></span>
+	<span class="text">Save</span></button>
+  </form>
+  </div>
+</body>
+</html>
